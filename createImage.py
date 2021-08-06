@@ -5,7 +5,7 @@ import textwrap
 class CreateImage:
 
 
-    def __init__(self, your_name=False, background='_instagram_post/image/reflex.jpg'):
+    def __init__(self, your_name=False, background='./image/reflex.jpg'):
         self.background = background
         self.yourName = your_name
 
@@ -35,6 +35,6 @@ class CreateImage:
             w, h = font.getsize(self.yourName)
             drow.text(xy=(width - (w + 10), height - (h + 10)), text=f'{self.yourName}', font=font_name, stroke_width=5,fill='white', stroke_fill='black')
         
-        im.save(f'_instagram_post/image/new/{name}.jpg')
+        im.save(f'./image/new/{name}.jpg')
 
 
