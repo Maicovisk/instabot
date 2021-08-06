@@ -19,4 +19,4 @@ def postFrase(num=1, post=False):
             img.create(text=frase['frase'], name=f'_{c}.jpg')
             if post:
                 insta.login()
-                insta.post_image(f'_instagram_post/image/new/_{c}.jpg', description='')
+                insta.post_image(f'./image/new/_{c}.jpg', description='')
